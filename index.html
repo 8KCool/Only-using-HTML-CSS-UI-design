@@ -8,46 +8,189 @@
 </head>
 <body>
 
+<header class="page-header">
+  <div class="container-max">
+    <nav class="header-nav">
+      <a href="" class="logo-panel">
+        <img src="./image/logo.png" alt="logo">
+        <span class="logo-title">LOSANGELES<br><font style="color: #414f6b; font-size:23px;">MOUNTAINS</font></span>
+      </a>
+      <ul>
+          <li class="first"><a href="/history">01. HISTORY</a></li>
+          <li><a href="/TEAM">02. TEAM</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" class="hamburger-icon"  onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+          <li><a href="/history">01. HISTORY</a></li>
+          <li><a href="/TEAM">02. TEAM</a></li>
+      </ul>
+      </div>
+  </div>
+</header>
+
 <div class="bgimg-1">
   <div class="caption">
-  <span class="border">SCROLL DOWN</span>
   </div>
 </div>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Parallax Demo</h3>
-  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
-</div>
-
-<div class="bgimg-2">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+<div style="background-color:white;" class="section-1">
+  <div class="container-max">
+    <nav class="header-nav">
+      <a href="" class="logo-panel">
+        <img src="./image/logo.png" alt="logo">
+        <span class="logo-title">LOSANGELES<br><font style="color: #414f6b; font-size:23px;">MOUNTAINS</font></span>
+      </a>
+      <ul>
+          <li class="first"><a href="/history">01. HISTORY</a></li>
+          <li><a href="/TEAM">02. TEAM</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon1" class="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+          <li><a href="/history">01. HISTORY</a></li>
+          <li><a href="/TEAM">02. TEAM</a></li>
+      </ul>
+      </div>
   </div>
 </div>
 
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+<div class="bgimg-2 section-2">
+  <div class="container-max">
+    <div class="title">
+        <span class="big">01.</span>
+        <span class="small">HISTORY</span>
+    </div>
+    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+  </div>  
+
+  <div style="background-color: #2e5ab366;" id="slider-group">
+    <div class="container-max">
+        <div class="slider-panel">
+            <ul id="imgList">
+            <li><img src="./image/slider1.png"/></li>
+            <li><img src="./image/slider2.png"/></li>
+            <li><img src="./image/slider1.png"/></li>
+            <li><img src="./image/slider2.png"/></li>
+            <li><img src="./image/slider1.png"/></li>
+            <li><img src="./image/slider2.png"/></li>
+            </ul>
+            <div class="carousel-dots">
+                <label for="img-1" class="carousel-dot black" id="img-dot-1" onclick="scrollRight(0)"></label>
+                <label for="img-2" class="carousel-dot white" id="img-dot-2" onclick="scrollRight(1)"></label>
+                <label for="img-2" class="carousel-dot white" id="img-dot-2" onclick="scrollRight(5)"></label>
+            </div>
+        </div>
+
+
+        <div id="slider-mobile" class="mobile-slide">  
+          <div class="slide-mobile" style="background:dodgerBlue;">
+            <img src="./image/slider1.png" >
+          </div>
+          
+          <div class="slide-mobile" style="background:coral;">
+             <img src="./image/slider2.png" >
+          </div>
+         
+          <div class="slide-mobile" style="background:crimson;">
+            <img src="./image/slider1.png" >
+          </div>
+          
+          <div class="slide-mobile" style="background: #6edf10;">
+            <img src="./image/slider2.png" >
+          </div>
+         
+          <div class="slide-mobile" style="background:coral;">
+            <img src="./image/slider1.png" >
+          </div>
+        
+          <div class="slide-mobile" style="background:crimson;">
+            <img src="./image/slider2.png" >
+          </div>
+         
+        
+          <!--Controlling arrows-->
+          <span class="controls-mobile" onclick="prevSlide(-1)" id="left-arrow"><
+          </span>
+          <span class="controls-mobile" id="right-arrow" onclick="nextSlide(1)">>
+          </span>
+        </div>
+          <div id="dots-con" class="mobile-slide">
+            <span class="dot-mobile"></span><span class="dot-mobile"></span><span class="dot-mobile"></span><span class="dot-mobile"></span><span class="dot-mobile"></span><span class="dot-mobile"></span>
+          </div>
+        
+    </div>
+</div>
+</div>
+
+<div style="position:relative;" class="section-3">
+  <div style="background-color: white;">
+    <div class="container-max">
+      <div class="title">
+          <span class="big">02.</span>
+          <span class="small">CLIMB</span>
+          <p class="content">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+      </div>
+      <p class="content-mobile">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. </p>
+    </div>
   </div>
 </div>
 
 <div class="bgimg-3">
-  <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  <div style="background-color: #414f6b; padding: 0 10px;">
+    <div class="container-max">
+        <ul>
+            <li class="active">MOUNTAIN1</li>
+            <li style="margin-left: 15px;">MOUNTAIN2</li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="container-max">
+    <div class="schedule-panel">
+      <span class="Oswald shedule-title">SCHEDULE</span>
+        <table>
+            <tr>
+                <td>25 Nob 2016</td>
+                <td>Vestibulum viverra</td>
+            </tr>
+            <tr>
+                <td>25 Nob 2016</td>
+                <td>Vestibulum viverra</td>
+            </tr>
+            <tr>
+                <td style="padding: 15px 0">25 Nob 2016</td>
+                <td>Vestibulum viverra</td>
+            </tr>
+            <tr>
+                <td>25 Nob 2016</td>
+                <td>Vestibulum viverra</td>
+            </tr>
+        </table>
+      </div>
   </div>
 </div>
 
 <div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-  </div>
-</div>
-
-<div class="bgimg-1">
-  <div class="caption">
-  <span class="border">COOL!</span>
-  </div>
+  <footer class="page-footer">
+    <div class="container-max">
+        <nav>
+          <a href="" class="logo-panel">
+            <img src="./image/logo.png" alt="logo">
+            <span class="logo-title">LOSANGELES<br><font style="color: #63769d; font-size:23px;">MOUNTAINS</font></span>
+          </a>
+          <span style="color: #63769d; font-size:12px;">COPYRIGHT 2016. ALL RIGHTS RESERVED.</span>
+        </nav>
+    </div>
+</footer>
 </div>
 
 </body>
+<script src="./script.js"></script>
 </html>
